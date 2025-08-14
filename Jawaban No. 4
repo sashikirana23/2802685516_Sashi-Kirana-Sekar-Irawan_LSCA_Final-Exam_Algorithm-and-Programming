@@ -1,0 +1,19 @@
+//2802685516_Sashi Kirana Sekar Irawan
+#include <stdio.h>
+
+long faktorial(int n) {
+    return (n <= 1) ? 1 : n * faktorial(n - 1);
+} //menggunakan tipe data long untuk menampung hasil faktorial karena hasilnya bisa besar
+
+int main() {
+    int n;
+    printf("Input: ");
+    scanf("%d", &n);
+
+    if (n < 0) {
+        printf("Faktorial tidak terdefinisi untuk bilangan negatif.\n");
+    } else {
+        printf("Faktorial dari %d adalah %ld\n", n, faktorial(n));
+    }    
+    return 0;
+}
