@@ -1,0 +1,17 @@
+//2802685516_Sashi Kirana Sekar Irawan
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char kata[100];
+
+    printf("Masukkan kata: ");
+    fgets(kata, sizeof(kata), stdin);
+
+    // Menghapus newline di akhir string jika ada
+    kata[strcspn(kata, "\n")] = '\0';
+
+    printf("Panjang string: %lu\n", strlen(kata)); // %lu digunakan untuk menampilkan nilai bertipe unsigned long
+
+    return 0;
+}
