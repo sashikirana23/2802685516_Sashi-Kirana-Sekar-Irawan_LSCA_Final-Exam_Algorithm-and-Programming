@@ -1,0 +1,18 @@
+//2802685516_Sashi Kirana Sekar Irawan
+#include <stdio.h>
+
+int main() {
+    int angka;
+    
+    printf("Input angka: "); //inputan user
+    scanf("%d", &angka);
+
+    // Menggunakan modulus untuk cek sisa pembagian dengan 2
+    if (angka % 2 == 0) {
+        printf("%d adalah bilangan genap\n", angka); //jika habis dibagi 2 maka termasuk bilangan genap
+    } else {
+        printf("%d adalah bilangan ganjil\n", angka); //jika tidak, maka termasuk bilangan ganjil
+    }
+
+    return 0;
+}
